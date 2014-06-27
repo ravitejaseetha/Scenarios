@@ -33,13 +33,6 @@ Scenario : Functionality of comment button
     When   I click on comment button
     Then   It should display pop up window containing textbox to add comments
 
-Scenario : Functionality of add comment button
-
-    Given  Add comment button
-    When   I enter comments 
-    And    Click add button
-    Then   The comments should be added in the details of task
-
 Scenario : Functionality of cancel button
 
     Given  Cancel button
