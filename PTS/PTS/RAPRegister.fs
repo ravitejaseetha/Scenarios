@@ -11,7 +11,7 @@ open OpenQA.Selenium.Firefox
 configuration.chromeDir <- @"D:\raviteja\Downloads\selenium-2.37.0\chromedriver"
 start chrome
 //start firefox
-//start firefox
+
 //let browser1 = browser
 //start chrome
 //let browser2 = browser
