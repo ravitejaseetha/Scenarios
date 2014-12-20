@@ -23,6 +23,9 @@ context "Reports"
 
 after (fun _ -> 
     sleep 3
+    let path = @"D:\Screenshots"
+    let filename = DateTime.Now.ToString("MMM-d_HH-mm-ss-fff")
+    screenshot path filename |> ignore
 )
 
 "Login page" &&& fun _ ->
@@ -31,6 +34,15 @@ after (fun _ ->
  click "Sign In"
  browser.Manage().Window.Maximize()
  
+ "RAP issuance report" &&& fun _ ->
+ sleep 1
+ browser.FindElement(By.ClassName("dropdown-toggle")).Click()
+ click "RAP Issuance Report"
+ click "#ctl00_ContentPlaceHolder1_FromDatePicker_popupButton"
+ click "1"
+ click "#ctl00_ContentPlaceHolder1_ToDatePicker_popupButton"
+ click "31"
+ click "Search"
 
 "Tourist daily visiting report" &&& fun _ ->
  sleep 1
@@ -39,11 +51,9 @@ after (fun _ ->
  click "#ctl00_ContentPlaceHolder1_FromDatePicker_popupButton"
  click "1"
  click "#ctl00_ContentPlaceHolder1_ToDatePicker_popupButton"
- click "26"
+ click "31"
  click "Search"
- sleep 2
- let var = browser.FindElement(By.ClassName("textBox26")).Displayed
- printf "value:%b" var
+
 
 "Tourist monthly visiting report" &&& fun _ ->
  sleep 1
