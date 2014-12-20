@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+<assembly><name>PTS</name></assembly>
+<members>
+<member name="T:AddHotels">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:FRO">
+
+</member>
+<member name="T:Hotels">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:Registration">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:Reports">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:tourOp">
+
+</member>
+</members>
+</doc>
