@@ -8,9 +8,9 @@ open types
 open OpenQA.Selenium
 open OpenQA.Selenium.Firefox
 
-//configuration.chromeDir <- @"D:\raviteja\Downloads\selenium-2.37.0\chromedriver"
-//start chrome
-start firefox
+configuration.chromeDir <- @"D:\raviteja\Downloads\selenium-2.37.0\chromedriver"
+start chrome
+//start firefox
 elementTimeout <- 20.0
 compareTimeout <- 20.0
 pageTimeout <- 20.0
@@ -19,22 +19,27 @@ let theTitle = title ()
 printf "%s" theTitle
 browser.Manage().Window.Maximize()
 //resize screenSizes.iPad
+"#username" << "admin"
+"#password" << "Design_20"
+click "Sign In"
+browser.Manage().Window.Maximize()
 context "Reports"
 
 after (fun _ -> 
-    sleep 3
-    let path = @"D:\Screenshots"
-    let filename = DateTime.Now.ToString("MMM-d_HH-mm-ss-fff")
-    screenshot path filename |> ignore
+ sleep 2
+ let path = @"E:\Screenshots"
+ let filename = DateTime.Now.ToString("MMM-d_HH-mm-ss-fff")
+ screenshot path filename |> ignore
+ "#ContentPlaceHolder1_ReportViewer1_ReportToolbar_ExportGr_FormatList_DropDownList" << "Acrobat (PDF) file"
+ click "#ContentPlaceHolder1_ReportViewer1_ReportToolbar_ExportGr_Export"
+ 
 )
 
-"Login page" &&& fun _ ->
- "#username" << "admin"
- "#password" << "Design_20"
- click "Sign In"
- browser.Manage().Window.Maximize()
+//"Login page" &&& fun _ ->
+
  
- "RAP issuance report" &&& fun _ ->
+
+"RAP issuance report" &&& fun _ ->
  sleep 1
  browser.FindElement(By.ClassName("dropdown-toggle")).Click()
  click "RAP Issuance Report"
@@ -43,6 +48,9 @@ after (fun _ ->
  click "#ctl00_ContentPlaceHolder1_ToDatePicker_popupButton"
  click "31"
  click "Search"
+
+
+
 
 "Tourist daily visiting report" &&& fun _ ->
  sleep 1
@@ -53,8 +61,7 @@ after (fun _ ->
  click "#ctl00_ContentPlaceHolder1_ToDatePicker_popupButton"
  click "31"
  click "Search"
-
-
+ 
 "Tourist monthly visiting report" &&& fun _ ->
  sleep 1
  browser.FindElement(By.ClassName("dropdown-toggle")).Click()
