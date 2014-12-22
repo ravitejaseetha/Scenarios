@@ -19,3 +19,24 @@ E:\F# programs\PTS\PTS\bin\Debug\WebDriver.Support.xml
 E:\F# programs\PTS\PTS\obj\Debug\PTS.exe
 E:\F# programs\PTS\PTS\obj\Debug\PTS.pdb
 E:\F# programs\PTS\PTS\obj\Debug\PTS.fsprojResolveAssemblyReference.cache
+D:\PTS_Git\Scenarios\PTS\PTS\bin\Debug\PTS.exe.config
+D:\PTS_Git\Scenarios\PTS\PTS\bin\Debug\PTS.XML
+D:\PTS_Git\Scenarios\PTS\PTS\bin\Debug\PTS.exe
+D:\PTS_Git\Scenarios\PTS\PTS\bin\Debug\PTS.pdb
+D:\PTS_Git\Scenarios\PTS\PTS\bin\Debug\canopy.dll
+D:\PTS_Git\Scenarios\PTS\PTS\bin\Debug\FSharp.Core.dll
+D:\PTS_Git\Scenarios\PTS\PTS\bin\Debug\Newtonsoft.Json.dll
+D:\PTS_Git\Scenarios\PTS\PTS\bin\Debug\SizSelCsZzz.dll
+D:\PTS_Git\Scenarios\PTS\PTS\bin\Debug\WebDriver.dll
+D:\PTS_Git\Scenarios\PTS\PTS\bin\Debug\WebDriver.Support.dll
+D:\PTS_Git\Scenarios\PTS\PTS\bin\Debug\canopy.pdb
+D:\PTS_Git\Scenarios\PTS\PTS\bin\Debug\canopy.xml
+D:\PTS_Git\Scenarios\PTS\PTS\bin\Debug\FSharp.Core.xml
+D:\PTS_Git\Scenarios\PTS\PTS\bin\Debug\Newtonsoft.Json.xml
+D:\PTS_Git\Scenarios\PTS\PTS\bin\Debug\SizSelCsZzz.pdb
+D:\PTS_Git\Scenarios\PTS\PTS\bin\Debug\WebDriver.xml
+D:\PTS_Git\Scenarios\PTS\PTS\bin\Debug\WebDriver.Support.xml
+D:\PTS_Git\Scenarios\PTS\PTS\obj\Debug\PTS.fsprojResolveAssemblyReference.cache
+D:\PTS_Git\Scenarios\PTS\PTS\obj\Debug\PTS.fsproj.PTS.exe.config
+D:\PTS_Git\Scenarios\PTS\PTS\obj\Debug\PTS.exe
+D:\PTS_Git\Scenarios\PTS\PTS\obj\Debug\PTS.pdb

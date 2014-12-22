@@ -72,8 +72,8 @@
     <Compile Include="tourOp.fs" />
     <Compile Include="Check-in.fs" />
     <Compile Include="FRO.fs" />
-    <Compile Include="Reports.fs" />
     <Compile Include="RAPRegister.fs" />
+    <Compile Include="Reports.fs" />
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
