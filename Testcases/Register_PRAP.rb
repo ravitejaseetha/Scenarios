@@ -81,6 +81,45 @@ Then  : It should add Tourist
 
 
 
+24-12-2014
+
+
+======================================================================================================================================================================================================================================
+| Test case ID |          Test case description          |                      Test steps                      |                       Expected result                        |              Actual result               |  Status  |
+|==============|=========================================|======================================================|==============================================================|==========================================|==========|
+|          1.1 | Check the functionality of visa type    | Click on drop down list and select any visa type     | It should display all the visa types added in database and   | Displaying all the visa types            | Passed   |
+|              | drop down                               |                                                      | should single visa type                                      | added in database and selecting          |          |
+|              |                                         |                                                      |                                                              | one type at a time                       |          |
+|--------------|-----------------------------------------|------------------------------------------------------|--------------------------------------------------------------|------------------------------------------|----------|
+|          1.2 | Check the functionality of visa type    | Select nationality as nepal and click on visa type   | Visa type drop down should be disabled after selecting nepal | Visa type is in disable mode             | Passed   |
+|              | for passport required, visa not         | drop down                                            | country                                                      |                                          |          |
+|              | required country tourists               |                                                      |                                                              |                                          |          |
+|--------------|-----------------------------------------|------------------------------------------------------|--------------------------------------------------------------|------------------------------------------|----------|
+|          1.3 | Check the required field validation     | Enter data in all fields except visa type and click  | It should display Visa type is required and cannot be empty  | Displaying as visa issued in is          | Resolved |
+|              | for visa type drop down                 | on add to group button                               |                                                              | required                                 |          |
+|--------------|-----------------------------------------|------------------------------------------------------|--------------------------------------------------------------|------------------------------------------|----------|
+|          1.4 | Check visa type column in database      | Register any tourist and check tourist table in      | It should display visa type which was added at the time of   | Displaying visa type which was added     | Passed   |
+|              | after tourist registration              | database with tourist name                           | registration for the corresponding tourist                   | at the time of registration              |          |
+|--------------|-----------------------------------------|------------------------------------------------------|--------------------------------------------------------------|------------------------------------------|----------|
+|          1.5 | Check whether visa type is updating or  | Add any tourist to the group and update visa type    | It should display the updated type in the table for the      | Displaying updated visa type in tourist  | Passed   |
+|              | not                                     | and click on save RAP. Now check tourist table in    | corresponding tourist                                        | table                                    |          |
+|              |                                         | database                                             |                                                              |                                          |          |
+|--------------|-----------------------------------------|------------------------------------------------------|--------------------------------------------------------------|------------------------------------------|----------|
+|          1.6 | Check the functionality of visa issued  | Enter any input and click on add to group            | It should add the tourist to the group and after saving RAP  | Added tourist to the group and saved in  | Passed   |
+|              | in text box                             |                                                      | the data should be saved in database                         | database                                 |          |
+|--------------|-----------------------------------------|------------------------------------------------------|--------------------------------------------------------------|------------------------------------------|----------|
+|          1.7 | Check the required field validation for | Click on add to group button without entering visa   | It should display visa issued in is required and cannot be   | Displaying as visa issued in is required | Passed   |
+|              | visa issued in text box                 | issued in                                            | empty                                                        | and cannot be empty                      |          |
+|--------------|-----------------------------------------|------------------------------------------------------|--------------------------------------------------------------|------------------------------------------|----------|
+|          1.8 | Check whether visa type is saving for   | First select visa type and then select nepal country | It should clear the visa type after selecting nationality as | Saving visa type for nepal/refugee       | Failed   |
+|              | nepal/refugee country tourists          | and add tourist                                      | nepal/refugee countries                                      | countries                                |          |
+|--------------|-----------------------------------------|------------------------------------------------------|--------------------------------------------------------------|------------------------------------------|----------|
+|          1.9 | Check visa type in for manage RAP       | Retrieve any RAP                                     | Visa type field should be displayed                          | Not displayin visa type                  | Failed   |
+|              |                                         |                                                      |                                                              |                                          |          |
+|--------------|-----------------------------------------|------------------------------------------------------|--------------------------------------------------------------|------------------------------------------|----------|
+|          2.0 | Check navigation from manage RAP        | Click sikkim logo image                              | It should navigate to home page                              | Displaying error                         | Failed   |
+|              |                                         |                                                      |                                                              |                                          |          |
+|--------------|-----------------------------------------|------------------------------------------------------|--------------------------------------------------------------|------------------------------------------|----------|
 
 
 
@@ -91,6 +130,26 @@ Then  : It should add Tourist
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
 
 
 
