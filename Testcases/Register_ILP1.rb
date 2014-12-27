@@ -120,35 +120,57 @@ Then  : It should add Tourist
 
 26-12-2014
 
-==========================================================================================================================================================================================================================================
-| Test case ID |              Test case description              |                      Test steps                      |                       Expected result                       |               Actual result               | Status |
-|==============|=================================================|======================================================|=============================================================|===========================================|========|
-|          1.1 | Check the tab order in registration page        | Click on tab after visa                              | The cursor should be in visa issued in                      | Cursor is moving to visa type             | Failed |
-|              |                                                 | validity                                             | text box                                                    |                                           |        |
-|--------------|-------------------------------------------------|------------------------------------------------------|-------------------------------------------------------------|-------------------------------------------|--------|
-|          1.2 | Check the functionality of visa type            | Click on drop down list and select any visa type     | It should display all the visa types added in database and  | Displaying all the visa types             | Passed |
-|              | drop down                                       |                                                      | should single visa type                                     | added in database and selecting           |        |
-|--------------|-------------------------------------------------|------------------------------------------------------|-------------------------------------------------------------|-------------------------------------------|--------|
-|          1.3 | Check the functionality of visa issued          | Enter any input and click on add to group            | It should add the tourist to the group and after saving RAP | Added tourist to the group and saved in   | Passed |
-|              | in text box                                     |                                                      | the data should be saved in database                        | database                                  |        |
-|--------------|-------------------------------------------------|------------------------------------------------------|-------------------------------------------------------------|-------------------------------------------|--------|
-|          1.4 | Check visa type required field validation for   | Select country(visa type not required) and click     | It should add tourist to the group without any validation   | Displaying validation as visa type        | Failed |
-|              | passport/id required and visa type not required | add button after entering data in all fields         |                                                             | required                                  |        |
-|              | countries                                       |                                                      |                                                             |                                           |        |
-|--------------|-------------------------------------------------|------------------------------------------------------|-------------------------------------------------------------|-------------------------------------------|--------|
-|          1.5 | Check required field validation for visa number | Enter all data and click on add button. Now enter    | It should not display required field validation             | Displaying required field validation      | Failed |
-|              | and visa issued in                              | data in visa number and visa issued in and click tab |                                                             |                                           |        |
-|--------------|-------------------------------------------------|------------------------------------------------------|-------------------------------------------------------------|-------------------------------------------|--------|
-|          1.6 | Check report format for super FRO               | Login through super fro and register any tourist     | After tourist registration, it should display report format | Displaying report which is different from | Passed |
-|              |                                                 |                                                      | different from tic issued repoort                           | tic                                       |        |
-|--------------|-------------------------------------------------|------------------------------------------------------|-------------------------------------------------------------|-------------------------------------------|--------|
-|          1.7 | Check visa type in enquiry report               | Register any tourist with visa type and check that   | It should display visa type which was selected during       | Displaying visa type whic was selected    | Passed |
-|              |                                                 | tourist in enquiry report                            | registration                                                | during registration                       |        |
-|--------------|-------------------------------------------------|------------------------------------------------------|-------------------------------------------------------------|-------------------------------------------|--------|
-|          1.8 | Check validation for passport number            | Enter tourist passport number who was yet to leave   | It should display required field validation only            | Displayig both validations(required and   | Failed |
-|              |                                                 | from sikkim again in the textbox and press tab and   |                                                             | agreed validation) at a time              |        |
-|              |                                                 | click add button                                     |                                                             |                                           |        |
-|              |                                                 |                                                      |                                                             |                                           |        |
+==============================================================================================================================================================================================================================================
+| Test case ID |              Test case description              |                      Test steps                      |                       Expected result                       |               Actual result               |  Status  |
+|==============|=================================================|======================================================|=============================================================|===========================================|==========|
+|          1.1 | Check the tab order in registration page        | Click on tab after visa                              | The cursor should be in visa issued in                      | Cursor is moving to visa type             | Resolved |
+|              |                                                 | validity                                             | text box                                                    |                                           |          |
+|--------------|-------------------------------------------------|------------------------------------------------------|-------------------------------------------------------------|-------------------------------------------|----------|
+|          1.2 | Check the functionality of visa type            | Click on drop down list and select any visa type     | It should display all the visa types added in database and  | Displaying all the visa types             | Passed   |
+|              | drop down                                       |                                                      | should single visa type                                     | added in database and selecting           |          |
+|--------------|-------------------------------------------------|------------------------------------------------------|-------------------------------------------------------------|-------------------------------------------|----------|
+|          1.3 | Check the functionality of visa issued          | Enter any input and click on add to group            | It should add the tourist to the group and after saving RAP | Added tourist to the group and saved in   | Passed   |
+|              | in text box                                     |                                                      | the data should be saved in database                        | database                                  |          |
+|--------------|-------------------------------------------------|------------------------------------------------------|-------------------------------------------------------------|-------------------------------------------|----------|
+|          1.4 | Check visa type required field validation for   | Select country(visa type not required) and click     | It should add tourist to the group without any validation   | Displaying validation as visa type        | Resolved |
+|              | passport/id required and visa type not required | add button after entering data in all fields         |                                                             | required                                  |          |
+|              | countries                                       |                                                      |                                                             |                                           |          |
+|--------------|-------------------------------------------------|------------------------------------------------------|-------------------------------------------------------------|-------------------------------------------|----------|
+|          1.5 | Check required field validation for visa number | Enter all data and click on add button. Now enter    | It should not display required field validation             | Displaying required field validation      | Resolved |
+|              | and visa issued in                              | data in visa number and visa issued in and click tab |                                                             |                                           |          |
+|--------------|-------------------------------------------------|------------------------------------------------------|-------------------------------------------------------------|-------------------------------------------|----------|
+|          1.6 | Check report format for super FRO               | Login through super fro and register any tourist     | After tourist registration, it should display report format | Displaying report which is different from | Passed   |
+|              |                                                 |                                                      | different from tic issued repoort                           | tic                                       |          |
+|--------------|-------------------------------------------------|------------------------------------------------------|-------------------------------------------------------------|-------------------------------------------|----------|
+|          1.7 | Check visa type in enquiry report               | Register any tourist with visa type and check that   | It should display visa type which was selected during       | Displaying visa type whic was selected    | Passed   |
+|              |                                                 | tourist in enquiry report                            | registration                                                | during registration                       |          |
+|--------------|-------------------------------------------------|------------------------------------------------------|-------------------------------------------------------------|-------------------------------------------|----------|
+|          1.8 | Check validation for passport number            | Enter tourist passport number who was yet to leave   | It should display required field validation only            | Displayig both validations(required and   | Resolved |
+|              |                                                 | from sikkim again in the textbox and press tab and   |                                                             | agreed validation) at a time              |          |
+|--------------|-------------------------------------------------|------------------------------------------------------|-------------------------------------------------------------|-------------------------------------------|----------|
+
+
+27-12-2014
+
+
+==================================================================================================================================================================================================================
+| Test case ID |              Test case description              |                       Test steps                      |             Expected result             |          Actual result           |  Status  |
+|==============|=================================================|=======================================================|=========================================|==================================|==========|
+|          1.1 | Check whether add button is enabled or not for  | Select RAP not required country as nationality and    | Add button should be in enable mode     | Add button is in disable mode    | Resolved |
+|              | nepal/refugee countries                         | then select Nepal/refugee country.                    |                                         |                                  |          |
+|--------------|-------------------------------------------------|-------------------------------------------------------|-----------------------------------------|----------------------------------|----------|
+|          1.2 | Check reports through super fro login           | Login through super fro and check reports             | All reports should display all check    | Displaying check post wise       | Resolved |
+|              |                                                 |                                                       | posts registered data                   |                                  |          |
+|--------------|-------------------------------------------------|-------------------------------------------------------|-----------------------------------------|----------------------------------|----------|
+|          1.3 | Check RAP issuance report through fro/tic login | Register any tourist with super fro user and retrieve | Report should display in tic/fro format | Displaying in tic/fro format     | Passed   |
+|              |                                                 | RAP through tic/fro user                              |                                         |                                  |          |
+|--------------|-------------------------------------------------|-------------------------------------------------------|-----------------------------------------|----------------------------------|----------|
+|          1.4 | Check tourist registration for provisional RAP  | Retrieve any provisional RAP through super fro and    | It should register tourist              | Registered tourist through super | Passed   |
+|              | through super fro user                          | register tourist                                      |                                         | fro                              |          |
+|--------------|-------------------------------------------------|-------------------------------------------------------|-----------------------------------------|----------------------------------|----------|
+
+
+
 
 
 
