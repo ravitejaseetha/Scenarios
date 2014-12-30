@@ -19,7 +19,7 @@ Scenario : Validation for visa number textbox
  Then   it shouldnt display validation error
 
 
-Scenario : Press tab after entering input in visa issued in textbox(failed)
+Scenario : Press tab after entering input in visa issued in textbox(Resolved)
 
  Given  Tourist registration page
  When   I select nationality as nepal(visa not required country) 
@@ -29,7 +29,7 @@ Scenario : Press tab after entering input in visa issued in textbox(failed)
  Then   the cursor should move to next field
 
 
-Scenario : Register provisional RAP(failed)
+Scenario : Register provisional RAP(Resolved)
 
  Given  provisional RAP
  When   i enter all fields except visa issued in 
