@@ -1,0 +1,10 @@
+D:\PTS_Git\Scenarios\PTS\DatabaseQueries\bin\Debug\DatabaseQueries.exe.config
+D:\PTS_Git\Scenarios\PTS\DatabaseQueries\bin\Debug\DatabaseQueries.XML
+D:\PTS_Git\Scenarios\PTS\DatabaseQueries\bin\Debug\DatabaseQueries.exe
+D:\PTS_Git\Scenarios\PTS\DatabaseQueries\bin\Debug\DatabaseQueries.pdb
+D:\PTS_Git\Scenarios\PTS\DatabaseQueries\bin\Debug\FSharp.Core.dll
+D:\PTS_Git\Scenarios\PTS\DatabaseQueries\bin\Debug\FSharp.Data.TypeProviders.dll
+D:\PTS_Git\Scenarios\PTS\DatabaseQueries\bin\Debug\FSharp.Core.xml
+D:\PTS_Git\Scenarios\PTS\DatabaseQueries\obj\Debug\DatabaseQueries.fsproj.DatabaseQueries.exe.config
+D:\PTS_Git\Scenarios\PTS\DatabaseQueries\obj\Debug\DatabaseQueries.exe
+D:\PTS_Git\Scenarios\PTS\DatabaseQueries\obj\Debug\DatabaseQueries.pdb
